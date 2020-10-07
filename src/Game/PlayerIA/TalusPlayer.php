@@ -41,7 +41,7 @@ class TalusPlayer extends Player
     {
         $mylast =  $this->result->getLastChoiceFor($this->mySide);
         $lastoppo = $this->result->getLastChoiceFor($this->opponentSide);
-        echo $this->Onechoice($lastoppo);
+        $this->Onechoice($lastoppo);
         if ($lastoppo == 'scissors')
             return parent::rockChoice();
         elseif ($lastoppo == 'rock')
